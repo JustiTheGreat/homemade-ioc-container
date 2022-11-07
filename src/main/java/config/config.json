@@ -1,0 +1,35 @@
+{
+  "services": [
+    {
+      "interface": "components.SomethingInterface",
+      "implementation": "components.SomethingImplementation",
+      "dependenciesTypes": [
+        "components.OtherInterface",
+        "components.AnotherInterface"
+      ],
+      "constructorParameterTypes": [
+        "components.OtherInterface",
+        "components.AnotherInterface"
+      ]
+    },
+    {
+      "interface": "components.OtherInterface",
+      "implementation": "components.OtherImplementation",
+      "dependenciesTypes": [
+        "components.AnotherInterface"
+      ],
+      "constructorParameterTypes": [
+        "int",
+        "java.lang.Integer",
+        "components.AnotherInterface",
+        "components.AnotherInterface"
+      ]
+    },
+    {
+      "interface": "components.AnotherInterface",
+      "implementation": "components.AnotherImplementation",
+      "dependenciesTypes": [],
+      "constructorParameterTypes": []
+    }
+  ]
+}
