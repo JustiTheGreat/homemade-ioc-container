@@ -40,7 +40,7 @@ public class DependencyInjectionContainer {
 
     public void configure() {
         try {
-            String content = Files.readString(Path.of("src/main/java/config.json"));
+            String content = Files.readString(Path.of("src/main/java/config/config.json"));
             JSONObject jsonObject = new JSONObject(content);
             JSONArray componentConfigurationArray = jsonObject.getJSONArray("services");
 
